@@ -14,8 +14,14 @@ wal -i "$WALL"
 # Apply GTK theme
 wal-gtk -i "$WALL" --apply
 
-# Reload Rofi to use new colors
+# Generate Waybar CSS from Pywal colors
+~/.config/scripts/generate_waybar_style.sh
+
+# Reload Waybar
+pkill waybar
+waybar &
+
+# Reload Rofi (if needed)
 pkill rofi
 rofi -show drun -theme-str "$(cat ~/.cache/wal/colors-rofi-dark.rasi)" &
-pkill waybar && waybar &
 
