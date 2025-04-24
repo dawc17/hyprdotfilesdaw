@@ -1,4 +1,11 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
 
 //@theme "/usr/share/rofi/themes/sidebar.rasi"
+
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+//@theme "/usr/share/rofi/themes/arthur.rasi"
+
+//@theme "/usr/share/rofi/themes/paper-float.rasi"
 
 @theme "/usr/share/rofi/themes/Arc-Dark.rasi"
