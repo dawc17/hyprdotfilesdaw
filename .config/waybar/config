@@ -1,0 +1,15 @@
+{
+    "modules-center": ["clock", "memory", "cpu", "network"],
+    "modules-right": ["tray", "pulseaudio", "battery"],
+    "clock": {
+        "format": "{:%Y-%m-%d %H:%M:%S}"
+    },
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "format-alt": "CPU: {usage}%",
+        "tooltip": false
+    },
+    "network": {
+        "interface": "wlan0"
+    }
+}
