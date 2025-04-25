@@ -10,6 +10,7 @@ swww img "$WALL"
 
 # Generate Pywal theme
 wal -i "$WALL"
+~/.config/scripts/update_mako_colors.sh
 
 # Generate Waybar CSS from Pywal colors
 ~/.config/scripts/generate_waybar_style.sh
