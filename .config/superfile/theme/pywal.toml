@@ -1,0 +1,69 @@
+# ~/.config/superfile/themes/pywal.toml (or your THEME_DIRECTORY)
+
+# This theme is dynamically generated from pywal colors.
+
+# You might want to pick a chroma theme that generally matches light/dark,
+# or find/create one specifically for pywal output.
+# Alternatively, pywal might have options to generate chroma themes directly.
+code_syntax_highlight = "monokai" # Or "monokai", "dracula", etc. - find one that fits
+
+# ========= Border =========
+# Use darker pywal colors like color0 or color8, or background itself
+file_panel_border = "#<pywal_color0_hex>"  # e.g., "#1f2335"
+sidebar_border = "#<pywal_background_hex>" # e.g., "#1e1e2e" (Set same as bg to hide)
+footer_border = "#<pywal_color0_hex>"      # e.g., "#1f2335"
+
+# ========= Border Active =========
+# Use brighter or accent pywal colors like color4, color5, color6, color1, color12 etc.
+file_panel_border_active = "#<pywal_color4_hex>" # e.g., "#7aa2f7" (Blue)
+sidebar_border_active = "#<pywal_color1_hex>"    # e.g., "#f7768e" (Red)
+footer_border_active = "#<pywal_color2_hex>"    # e.g., "#9ece6a" (Green)
+modal_border_active = "#<pywal_color8_hex>"     # e.g., "#414868" (Bright Black/Grey)
+
+# ========= Background (bg) =========
+# Use pywal's main background color
+full_screen_bg = "#<pywal_background_hex>" # e.g., "#1e1e2e"
+file_panel_bg = "#<pywal_background_hex>"
+sidebar_bg = "#<pywal_background_hex>"
+footer_bg = "#<pywal_background_hex>"
+modal_bg = "#<pywal_background_hex>"
+
+# ========= Foreground (fg) =========
+# Use pywal's main foreground color
+full_screen_fg = "#<pywal_foreground_hex>" # e.g., "#a6adc8"
+file_panel_fg = "#<pywal_foreground_hex>"
+sidebar_fg = "#<pywal_foreground_hex>"
+footer_fg = "#<pywal_foreground_hex>"
+modal_fg = "#<pywal_foreground_hex>"
+
+# ========= Special Color =========
+cursor = "#<pywal_cursor_hex>"      # Often same as foreground
+correct = "#<pywal_color2_hex>"     # Green
+error = "#<pywal_color1_hex>"       # Red
+hint = "#<pywal_color3_hex>"        # Yellow or Cyan (color6)
+cancel = "#<pywal_color5_hex>"      # Magenta or Red (color1)
+# Use two distinct accent colors from pywal (e.g., blue and magenta)
+gradient_color = ["#<pywal_color4_hex>", "#<pywal_color5_hex>"] # e.g., ["#89b4fa", "#cba6f7"]
+
+# ========= File Panel Special Items =========
+file_panel_top_directory_icon = "#<pywal_color2_hex>" # Green
+file_panel_top_path = "#<pywal_color4_hex>"          # Blue
+file_panel_item_selected_fg = "#<pywal_color6_hex>"  # Cyan or another bright color
+file_panel_item_selected_bg = "#<pywal_color8_hex>"  # Dark Grey / Bright Black (subtle contrast) or background
+
+# ========= Sidebar Special Items =========
+sidebar_title = "#<pywal_color6_hex>"               # Cyan
+sidebar_item_selected_fg = "#<pywal_color4_hex>"     # Blue or another bright color
+sidebar_item_selected_bg = "#<pywal_color8_hex>"     # Dark Grey / Bright Black or background
+sidebar_divider = "#<pywal_color0_hex>"             # Darkest grey
+
+# ========= Modal Special Items =========
+modal_cancel_fg = "#<pywal_background_hex>"         # Background color for contrast
+modal_cancel_bg = "#<pywal_color1_hex>"             # Red
+
+modal_confirm_fg = "#<pywal_background_hex>"        # Background color for contrast
+modal_confirm_bg = "#<pywal_color4_hex>"            # Blue or Green (color2)
+
+# ========= Help Menu =========
+help_menu_hotkey = "#<pywal_color6_hex>"            # Cyan
+help_menu_title = "#<pywal_color5_hex>"             # Magenta

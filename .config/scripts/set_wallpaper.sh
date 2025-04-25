@@ -11,9 +11,6 @@ swww img "$WALL"
 # Generate Pywal theme
 wal -i "$WALL"
 
-# Apply GTK theme
-wal-gtk -i "$WALL" --apply
-
 # Generate Waybar CSS from Pywal colors
 ~/.config/scripts/generate_waybar_style.sh
 

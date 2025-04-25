@@ -1,23 +1,23 @@
 /* Waybar Theme from Pywal */
 
 #waybar {
-    background: #060606;
-    color: #e7e6e6;
+    background: #021415;
+    color: #edc4a3;
 }
 
 #clock {
-    color: #D1D1D2;
+    color: #BC845B;
 }
 
 #cpu {
-    color: #B0B0B0;
+    color: #925E39;
 }
 
 #network {
-    color: #908F90;
+    color: #6A5846;
 }
 
 #memory {
-    color: #C2BCBC;
+    color: #996E4D;
 }
 
