@@ -62,19 +62,25 @@ fi
 # --- Create Waybar CSS ---
 # Ensure the target directory exists
 WAYBAR_CONFIG_DIR="$HOME/.config/waybar"
-mkdir -p "$WAYBAR_CONFIG_DIR"
+TEMPLATE_FILE="$WAYBAR_CONFIG_DIR/style.template.css"
+OUTPUT_FILE="$WAYBAR_CONFIG_DIR/style.css"
 
-# Use printf for potentially safer variable expansion, though cat EOF is usually fine.
-printf "/* Waybar Theme from Pywal */\n\n" > "$WAYBAR_CONFIG_DIR/style.css"
-printf "#waybar {\n    background: %s;\n    color: %s;\n}\n\n" "$color0" "$color7" >> "$WAYBAR_CONFIG_DIR/style.css"
-printf "#clock {\n    color: %s;\n}\n\n" "$color6" >> "$WAYBAR_CONFIG_DIR/style.css"
-printf "#cpu {\n    color: %s;\n}\n\n" "$color4" >> "$WAYBAR_CONFIG_DIR/style.css"
-printf "#network {\n    color: %s;\n}\n\n" "$color2" >> "$WAYBAR_CONFIG_DIR/style.css"
-printf "#memory {\n    color: %s;\n}\n\n" "$color5" >> "$WAYBAR_CONFIG_DIR/style.css"
-# Add more elements and styling as needed
-# Example:
-# printf "#custom-weather {\n    color: %s;\n}\n\n" "$color3" >> "$WAYBAR_CONFIG_DIR/style.css"
+if [ ! -f "$TEMPLATE_FILE" ]; then
+    echo "Error: Template file not found at $TEMPLATE_FILE" >&2
+    exit 1
+fi
 
-echo "Waybar style.css generated at $WAYBAR_CONFIG_DIR/style.css"
+# Use sed to replace placeholders in the template file
+sed -e "s|__COLOR0__|${color0}|g" \
+    -e "s|__COLOR1__|${color1}|g" \
+    -e "s|__COLOR2__|${color2}|g" \
+    -e "s|__COLOR3__|${color3}|g" \
+    -e "s|__COLOR4__|${color4}|g" \
+    -e "s|__COLOR5__|${color5}|g" \
+    -e "s|__COLOR6__|${color6}|g" \
+    -e "s|__COLOR7__|${color7}|g" \
+    "$TEMPLATE_FILE" > "$OUTPUT_FILE" # Note: Overwrites the output file
+
+echo "Waybar style.css generated from template at $OUTPUT_FILE"
 echo "Reload Waybar for changes to take effect (e.g., killall -SIGUSR2 waybar)"
 

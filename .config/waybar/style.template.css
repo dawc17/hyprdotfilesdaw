@@ -2,7 +2,7 @@
 #waybar {
     border: none;
     background: none; /* Placeholder for color0 */
-    color: #c9d1e0;    /* Placeholder for color7 */
+    color: __COLOR7__;    /* Placeholder for color7 */
     font-family: "JetBrainsMono Nerd Font"; /* Your static font */
 }
 
@@ -23,19 +23,19 @@
 }
 
 #clock {
-    color: #6B91D6;    /* Placeholder for color6 */
+    color: __COLOR6__;    /* Placeholder for color6 */
 }
 
 #cpu {
-    color: #8B71AB;
+    color: __COLOR4__;
 }
 
 #network {
-    color: #5E669C;
+    color: __COLOR2__;
 }
 
 #memory {
-    color: #628BB7;
+    color: __COLOR5__;
 }
 
 #workspaces {
@@ -48,12 +48,12 @@
     background: none;
     padding: 5;
     box-shadow: none;
-    color: #c9d1e0;
+    color: __COLOR7__;
 }
 
 #workspaces button:hover {
     color: black;
-    background-color: #628BB7;
+    background-color: __COLOR5__;
     border-color: transparent;
     box-shadow: none;
     text-shadow: none;

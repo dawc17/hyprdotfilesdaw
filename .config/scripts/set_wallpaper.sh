@@ -21,5 +21,4 @@ waybar &
 
 # Reload Rofi (if needed)
 pkill rofi
-rofi -show drun -theme-str "$(cat ~/.cache/wal/colors-rofi-dark.rasi)" &
 
