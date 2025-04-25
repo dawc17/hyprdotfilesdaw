@@ -13,3 +13,4 @@ packages (aur)
 - neofetch
 - swww
 - hyprlock
+- pywalfox
