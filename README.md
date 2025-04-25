@@ -12,4 +12,4 @@ packages (aur)
 - rofi-wayland
 - neofetch
 - swww
-- swaylock (eventually)
+- hyprlock
