@@ -11,7 +11,7 @@ LOG_FILE="$CACHE_DIR/wallpapercycle.log"
 # --- Paths to Update Scripts ---
 WAYBAR_STYLE_SCRIPT="$HOME/.config/scripts/generate_waybar_style.sh"
 MAKO_UPDATE_SCRIPT="$HOME/.config/scripts/update_mako_colors.sh" # Path to Mako update script
-
+LUA_UPDATE_SCRIPT="$HOME/.config/scripts/generate_lua_colors.sh" # Path to Lua update script
 # --- Functions ---
 
 log_message() {
@@ -124,6 +124,15 @@ else
     log_message "INFO: 'wal-gtk' command not found, skipping GTK theme apply."
 fi
 
+# --- Update Lua Colors File ---
+if [ -x "$LUA_UPDATE_SCRIPT" ]; then
+    log_message "Updating Lua colors file using: $LUA_UPDATE_SCRIPT"
+    lua_update_output=$("$LUA_UPDATE_SCRIPT" 2>&1); lua_update_status=$?
+    log_message "Lua colors update script status: $lua_update_status"; log_message "Lua colors update script output: [$lua_update_output]"
+    if [ $lua_update_status -ne 0 ]; then log_message "WARN: Lua colors update script '$LUA_UPDATE_SCRIPT' failed with status $lua_update_status."; fi
+else
+    log_message "WARN: Lua colors update script '$LUA_UPDATE_SCRIPT' not found or not executable. Skipping."
+fi
 
 # Generate Waybar CSS
 if [ -x "$WAYBAR_STYLE_SCRIPT" ]; then
