@@ -14,83 +14,88 @@ packages (aur)
 - swww
 - hyprlock
 - pywalfox
+- neovim
 
-📜 Dotfiles Cheatsheet (cfg)
+# 📜 Dotfiles Cheatsheet (cfg)
 
-📂 Adding Files
+## 📂 Adding Files
 
-cfg add path/to/file_or_folder
+```cfg add path/to/file_or_folder```
 
-❌ Unstaging Files (after cfg add, before commit)
+## ❌ Unstaging Files (after cfg add, before commit)
 
-cfg reset HEAD path/to/file_or_folder
+```cfg reset HEAD path/to/file_or_folder```
 
-Unstage everything:
+### Unstage everything:
 
-cfg reset HEAD
+```cfg reset HEAD```
 
-📝 Committing
+## 📝 Committing
 
-cfg commit -m "your commit message"
+```cfg commit -m "your commit message"```
 
-🚀 Pushing to GitHub
+## 🚀 Pushing to GitHub
 
-cfg push
+```cfg push```
 
-⬇️ Pulling from GitHub
+## ⬇️ Pulling from GitHub
 
-cfg pull --rebase
+```cfg pull --rebase```
 
-💥 Fixing Mistakes
+## 💥 Fixing Mistakes
 
-🧹 Undo Last Commit
+## 🧹 Undo Last Commit
 
-Goal
+### Undo commit but keep staged changes
 
-Command
+```cfg reset --soft HEAD~1```
 
-Undo commit but keep staged changes
+### Undo commit and unstage changes
 
-cfg reset --soft HEAD~1
+```cfg reset --mixed HEAD~1```
 
-Undo commit and unstage changes
+### Undo commit and discard all changes
 
-cfg reset --mixed HEAD~1
+```cfg reset --hard HEAD~1 (⚠️ careful)```
 
-Undo commit and discard all changes
+## 🔥 Other Useful Commands
 
-cfg reset --hard HEAD~1 (⚠️ careful)
+## 🗑️ Removing Files from Repo
 
-🔥 Other Useful Commands
+### Remove a file:
 
-🗑️ Removing Files from Repo
-
-Remove a file:
-
+```
 cfg rm path/to/file
 cfg commit -m "remove file"
 cfg push
+```
 
-Remove a folder:
+### Remove a folder:
 
+```
 cfg rm -r path/to/folder
 cfg commit -m "remove folder"
 cfg push
+```
 
-Stop tracking a file but keep it locally:
+### Stop tracking a file but keep it locally:
 
+```
 cfg rm --cached path/to/file
 cfg commit -m "stop tracking file"
 cfg push
+```
 
-⚡ Bonus: Cloning Your Dotfiles on a New Machine
+## ⚡ Bonus: Cloning Your Dotfiles on a New Machine
 
+```
 git clone --bare https://github.com/yourusername/yourdotfilesrepo.git $HOME/.cfg
 
 alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 cfg checkout
 cfg config --local status.showUntrackedFiles no
+```
 
-🚀 Done!
+# 🚀 Done!
 
