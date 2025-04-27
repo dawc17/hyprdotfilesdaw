@@ -19,21 +19,21 @@ sort=+time
 layer=overlay
 
 # === Pywal Colors ===
-background-color=#021415    
-text-color=#edc4a3          
-border-color=#925E39            
+background-color=#0B0E0E    
+text-color=#c9d1e0          
+border-color=#8B71AB            
 
 # === Urgency Levels ===
 [urgency=low]
-text-color=#a58972              
-border-color=#a58972            
+text-color=#8c929c              
+border-color=#8c929c            
 
 [urgency=normal]
 # Inherits default colors (background, foreground, color4 border)
 
 [urgency=high]
-background-color=#4F5045        
-text-color=#edc4a3          
-border-color=#4F5045            
+background-color=#295D97        
+text-color=#c9d1e0          
+border-color=#295D97            
 default-timeout=0                  
 ignore-timeout=1                   
