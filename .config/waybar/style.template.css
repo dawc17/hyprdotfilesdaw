@@ -53,9 +53,11 @@
   transition: all 0.2s ease;
   background: none;
   padding-right: 9;
+  padding-left: 6.5;
   box-shadow: none;
   color: __COLOR7__;
   font-size: 16px;
+  margin-right: 2px;
 }
 
 #workspaces button:hover {

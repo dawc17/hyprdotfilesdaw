@@ -8,15 +8,18 @@
     "modules-left": ["hyprland/workspaces", "memory", "cpu", "bluetooth"],
     "clock": {
         "format": "{:%d-%m-%Y %H:%M:%S}",
-        "tooltip": false
+        "tooltip": false,
+        "interval": 1,
     },
     "cpu": {
         "format": " {usage}%",
         "format-alt": " {usage}%",
-        "tooltip": false
+        "tooltip": false,
+        "interval": 5,
     },
     "memory": {
-        "format": " {percentage}%"
+        "format": " {percentage}%",
+        "interval": 5,
     },
     "bluetooth": {
       "format": " {status}",
