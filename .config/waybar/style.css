@@ -2,7 +2,7 @@
 #waybar {
   border: none;
   background: none; /* Placeholder for color0 */
-  color: #c9d1e0; /* Placeholder for color7 */
+  color: #e5c9c9; /* Placeholder for color7 */
   font-family: "JetBrainsMono Nerd Font, JetBrainsMono NF"; /* Your static font */
 }
 
@@ -23,19 +23,19 @@
 }
 
 #clock {
-  color: #6B91D6; /* Placeholder for color6 */
+  color: #ADADAC; /* Placeholder for color6 */
 }
 
 #cpu {
-  color: #8B71AB;
+  color: #83807F;
 }
 
 #network {
-  color: #5E669C;
+  color: #9A242C;
 }
 
 #memory {
-  color: #628BB7;
+  color: #8A8A89;
 }
 
 #workspaces {
@@ -44,7 +44,7 @@
 }
 
 #workspaces button.active {
-  background-color: #628BB7;
+  background-color: #8A8A89;
   color: black;
   padding-right: 9;
 }
@@ -54,13 +54,13 @@
   background: none;
   padding-right: 9;
   box-shadow: none;
-  color: #c9d1e0;
+  color: #e5c9c9;
   font-size: 16px;
 }
 
 #workspaces button:hover {
   color: black;
-  background-color: #628BB7;
+  background-color: #8A8A89;
   border-color: transparent;
   box-shadow: none;
   text-shadow: none;

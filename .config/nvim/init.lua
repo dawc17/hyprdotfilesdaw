@@ -22,4 +22,4 @@ require("config.lazy")
 ---@diagnostic disable-next-line: different-requires
 require("lazy").setup("plugins")
 require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "redish"
