@@ -15,7 +15,7 @@
         "format": " {usage}%",
         "format-alt": " {usage}%",
         "tooltip": false,
-        "interval": 5,
+        "interval": 6,
     },
     "memory": {
         "format": " {percentage}%",
