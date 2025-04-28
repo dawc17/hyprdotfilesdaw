@@ -1,63 +1,69 @@
 /* Waybar Template */
 #waybar {
-    border: none;
-    background: none; /* Placeholder for color0 */
-    color: __COLOR7__;    /* Placeholder for color7 */
-    font-family: "JetBrainsMono Nerd Font"; /* Your static font */
+  border: none;
+  background: none; /* Placeholder for color0 */
+  color: __COLOR7__; /* Placeholder for color7 */
+  font-family: "JetBrainsMono Nerd Font, JetBrainsMono NF"; /* Your static font */
 }
 
 .modules-left {
-    background: black;
-    border-radius: 6px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 10px;
-    padding-left: 2px;
+  background: black;
+  border-radius: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  padding-left: 2px;
 }
 
 .modules-right,
 .modules-center {
-    border-radius: 6px;
-    background: black;
-    padding: 2px 12px;
+  border-radius: 6px;
+  background: black;
+  padding: 2px 12px;
 }
 
 #clock {
-    color: __COLOR6__;    /* Placeholder for color6 */
+  color: __COLOR6__; /* Placeholder for color6 */
 }
 
 #cpu {
-    color: __COLOR4__;
+  color: __COLOR4__;
 }
 
 #network {
-    color: __COLOR2__;
+  color: __COLOR2__;
 }
 
 #memory {
-    color: __COLOR5__;
+  color: __COLOR5__;
 }
 
 #workspaces {
-    border-radius: 4px;
-    margin: 0;
+  border-radius: 4px;
+  margin: 0;
+}
+
+#workspaces button.active {
+  background-color: __COLOR5__;
+  color: black;
+  padding-right: 9;
 }
 
 #workspaces button {
-    transition: all 0.2s ease; 
-    background: none;
-    padding: 5;
-    box-shadow: none;
-    color: __COLOR7__;
+  transition: all 0.2s ease;
+  background: none;
+  padding-right: 9;
+  box-shadow: none;
+  color: __COLOR7__;
+  font-size: 16px;
 }
 
 #workspaces button:hover {
-    color: black;
-    background-color: __COLOR5__;
-    border-color: transparent;
-    box-shadow: none;
-    text-shadow: none;
+  color: black;
+  background-color: __COLOR5__;
+  border-color: transparent;
+  box-shadow: none;
+  text-shadow: none;
 }
-
 
 /* Add other rules and placeholders */

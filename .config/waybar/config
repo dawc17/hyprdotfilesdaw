@@ -5,22 +5,35 @@
     "spacing": 10,
     "modules-center": ["hyprland/window"],
     "modules-right": ["clock", "tray", "pulseaudio", "battery"],
-    "modules-left": ["hyprland/workspaces", "memory", "cpu"],
+    "modules-left": ["hyprland/workspaces", "memory", "cpu", "bluetooth"],
     "clock": {
         "format": "{:%d-%m-%Y %H:%M:%S}",
         "tooltip": false
     },
     "cpu": {
-        "format": "CPU: {usage}%",
-        "format-alt": "CPU: {usage}%",
+        "format": " {usage}%",
+        "format-alt": " {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": "RAM: {percentage}%"
+        "format": " {percentage}%"
+    },
+    "bluetooth": {
+      "format": " {status}",
+      "format-disabled": "󰂲",
+      "on-click": "blueman-manager",
     },
     "hyprland/workspaces": {
-        "format": "{icon}"
-    },
+        "format": "{icon}",
+        "format-icons": {
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+          "5": "",
+          "6": "",
+        },
+},
     "hyprland/window": {
         "separate-outputs": true
     },
