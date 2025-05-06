@@ -58,6 +58,7 @@
   color: __COLOR7__;
   font-size: 16px;
   margin-right: 2px;
+  border-radius: 4px;
 }
 
 #workspaces button:hover {
