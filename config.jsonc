@@ -1,0 +1,148 @@
+{
+
+
+    "layer": "top",
+
+
+    "position": "top",
+
+
+    "margin": "4 4 4 4",
+
+
+    "spacing": 10,
+
+
+    "modules-center": ["hyprland/window"],
+
+
+    "modules-right": ["clock", "tray", "pulseaudio", "battery"],
+
+
+    "modules-left": ["hyprland/workspaces", "memory", "cpu", "bluetooth"],
+
+
+    "clock": {
+
+
+        "format": "{:%d-%m-%Y %H:%M:%S}",
+
+
+        "tooltip": false,
+
+
+        "interval": 1,
+
+
+    },
+
+
+    "cpu": {
+
+
+        "format": " {usage}%",
+
+
+        "format-alt": " {usage}%",
+
+
+        "tooltip": false,
+
+
+        "interval": 6,
+
+
+    },
+
+
+    "memory": {
+
+
+        "format": " {percentage}%",
+
+
+        "interval": 5,
+
+
+    },
+
+
+    "bluetooth": {
+
+
+      "format": " {status}",
+
+
+      "format-disabled": "󰂲",
+
+
+      "on-click": "blueman-manager",
+
+
+    },
+
+
+    "hyprland/workspaces": {
+
+
+        "format": "{icon}",
+
+
+        "format-icons": {
+
+
+          "1": "",
+
+
+          "2": "",
+
+
+          "3": "",
+
+
+          "4": "",
+
+
+          "5": "",
+
+
+          "6": "",
+
+
+        },
+
+
+},
+
+
+    "hyprland/window": {
+
+
+        "separate-outputs": true
+
+
+    },
+
+
+    "network": {
+
+
+        "interface": "wlan0"
+
+
+    },
+
+
+    "pulseaudio": {
+
+
+        "format-muted": "MUTED",
+
+
+        "on-click": "pavucontrol"
+
+
+    }
+
+
+}
