@@ -9,3 +9,7 @@
 //@theme "/usr/share/rofi/themes/paper-float.rasi"
 
 @theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+configuration {
+    font: "JetBrainsMono Nerd Font Mono 12";
+} 
