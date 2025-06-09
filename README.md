@@ -15,6 +15,7 @@ packages (aur)
 - hyprlock
 - pywalfox
 - neovim
+- probably some more
 
 requires a nerdfont
 there may be some packages i installed that arent listed here lol sorry
